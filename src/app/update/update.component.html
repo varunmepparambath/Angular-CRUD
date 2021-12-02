@@ -1,1 +1,51 @@
-<p>update works!</p>
+<!-- <div>
+    <h1>Create Product</h1>
+    <form [formGroup]="productForm" (ngSubmit)="submitForm()" novalidate>
+        <div>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" formControlName="name" class="form-control" maxlength="20">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" formControlName="description" rows="3" maxlength="50"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" formControlName="price" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="text" formControlName="quantity" class="form-control">
+        </div>
+    </div>
+        <button type="submit">Submit</button>
+    </form>
+</div> -->
+
+<div class="container">  
+    <form id="contact" [formGroup]="productForm" (ngSubmit)="submitForm()" novalidate>
+      <h3>New Product Form</h3>
+      <h4>Contact us for any enquiries</h4>
+      <fieldset>
+         <p>Product name:</p>
+        <input placeholder="Product name" formControlName="name"type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <p>Product price:</p>
+        <input placeholder="Product price" formControlName="price" type="number" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <p>Product quantity:</p>
+        <input placeholder="Product quantity"formControlName="quantity"  type="number" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <p>Product description:</p>
+        <textarea placeholder="" formControlName="description" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      <!-- <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p> -->
+    </form>
+  </div>

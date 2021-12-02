@@ -4,7 +4,7 @@
       <h1 class="title">Products</h1>
   </div>
   <div class="right-container">
-    <figure class="snip1492" *ngFor="let product of products,let i = index" [routerLink]="['../detail/'+product.id]">
+    <figure class="snip1492" *ngFor="let product of products,let i = index"  [routerLink]="'/detail/'+product.id" >
       <img
         src="{{'https://images.cloudflare.com/cdn-cgi/image/width=1000,quality=50/'+product.imageUrl+stringCutter(product.name)}}"
         alt="product"
@@ -16,8 +16,7 @@
         </p>
         <div class="price"><s>${{product.price - 100}}</s>${{product.price}}</div>
       </figcaption>
-      <i class="ion-plus-round">+</i>
-      <a href="#"></a>
+      <i class="ion-plus-round"></i>
     </figure>
   </div>
 </div>

@@ -1,3 +1,6 @@
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400);
 .container {
   display: flex;
   height: 100vh;
@@ -18,8 +21,6 @@ flex-direction: row;
 overflow-y:scroll ;
 flex-wrap: wrap;
 }
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400);
 .snip1492 {
   font-family: 'Oswald', Arial, sans-serif;
   position: relative;

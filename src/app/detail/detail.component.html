@@ -1,1 +1,27 @@
-<p>detail works!</p>
+<div class="contain">
+  <figure class="snip1492">
+    <img
+      src="{{
+        'https://images.cloudflare.com/cdn-cgi/image/width=1000,quality=50/' +
+          product.imageUrl +
+          stringCutter(product.name)
+      }}"
+      alt="product"
+    />
+    <figcaption>
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}.</p>
+      <div class="price">
+        <s>${{ product.price - 100 }}</s
+        >${{ product.price }}
+      </div>
+    </figcaption>
+    <i class="ion-plus-round"></i>
+    <div class="button-list">
+        <button [routerLink]="'../../update/'+product.id">Update</button>
+        <button >Go Back</button>
+        <button (click)="delete(product.id)">Delete</button>
+    </div>
+    
+  </figure>
+</div>
